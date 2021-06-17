@@ -1,0 +1,55 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</head>                                                       
+<body>
+<style>
+.container {
+ padding: 30px;
+}
+hr.style1{
+	border-top: 3px solid #8c8b8b;
+}
+.grad1 {
+  height: 100%;
+  background-image:linear-gradient(to right,Lightskyblue,Darkslateblue);
+}
+
+</style>
+<center>
+<div class="grad1">
+<div style = "position:relative;top:41px">
+<!--<div class="shadow p-3 mb-5 bg-white rounded" style="width:32em;height:520px">-->
+<div class="border-0" style="border-radius:8px;height:420px;width:32em;backgrounD:white">
+<form action="#" th:action="@{/addUser}" th:object="${employee}" method="post">
+<div class="container">
+<h5 style=""><b>REGISTRATION FORM<b></H5>
+<hr class="style1">
+<div>
+<input name="name" type="text" id="ghi"class="form-control col-lg-8"placeholder="FirstName">
+</div>
+<div>
+<br><input name="password"type="password" id="jkl"class="form-control col-lg-8"placeholder="password">
+</div>
+</div><br>
+<button class="btn btn-primary form-control col-lg-4"> submit </button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</center>
+</body>
+</html>
